@@ -1,2 +1,2 @@
 # Data Analytics and Visualization
-## Belonging Visualization Project Marketings Impacton Community
+## Belonging Visualization Project Marketing's Impact on Community
