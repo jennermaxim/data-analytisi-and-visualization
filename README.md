@@ -1,2 +1,2 @@
-# Dat Analytics and Visualization
+# Data Analytics and Visualization
 ## Belonging Visualization Project Marketings Impacton Community
