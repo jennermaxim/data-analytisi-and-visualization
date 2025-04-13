@@ -1,13 +1,8 @@
 from linkedin_api import Linkedin
 import csv
-import os
-from dotenv import load_dotenv
 
-# LINKEDIN_EMAIL = os.getenv("LINKEDIN_EMAIL")
-# LINKEDIN_PASSWORD = os.getenv("LINKEDIN_PASSWORD")
-
-LINKEDIN_EMAIL = os.getenv("example@gmail.com")
-LINKEDIN_PASSWORD = os.getenv("12345")
+LINKEDIN_EMAIL = "LINKEDIN_EMAIL"  # Replace with your actual LinkedIn email
+LINKEDIN_PASSWORD = "LINKEDIN_PASSWORD"  # Replace with your actual LinkedIn password
 
 linkedin_api = Linkedin(LINKEDIN_EMAIL, LINKEDIN_PASSWORD)
 

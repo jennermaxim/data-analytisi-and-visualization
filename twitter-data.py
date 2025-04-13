@@ -1,19 +1,10 @@
 import tweepy
 import csv
-import os
-from dotenv import load_dotenv
 
-load_dotenv()
-
-# TWITTER_API_KEY = os.getenv("TWITTER_API_KEY")
-# TWITTER_API_SECRET = os.getenv("TWITTER_API_SECRET")
-# TWITTER_ACCESS_TOKEN = os.getenv("TWITTER_ACCESS_TOKEN")
-# TWITTER_ACCESS_SECRET = os.getenv("TWITTER_ACCESS_SECRET")
-
-TWITTER_API_KEY = "ABpINbeG7o19nPmBW3Oms0OEA"
-TWITTER_API_SECRET = "37CN0M7KzY5J6TzwQTz7jB7yRtNSbSzQ4WItDilxwkdfe6MKao"
-TWITTER_ACCESS_TOKEN = "1584821429446623234-xM6gmLY4ZCzGkF3Frp1EhlzQMor1LG"
-TWITTER_ACCESS_SECRET = "amHSPd9FEyGIGtEHscrSyzKq8vduCVDgWLOtroI8Wm6F5"
+TWITTER_API_KEY = "TWITTER_API_KEY"  # Replace with your actual API key
+TWITTER_API_SECRET = "TWITTER_API_SECRET"  # Replace with your actual API secret
+TWITTER_ACCESS_TOKEN = "TWITTER_ACCESS_TOKEN"  # Replace with your actual access token
+TWITTER_ACCESS_SECRET = "TWITTER_ACCESS_SECRET"  # Replace with your actual access secret
 
 auth = tweepy.OAuthHandler(TWITTER_API_KEY, TWITTER_API_SECRET)
 auth.set_access_token(TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_SECRET)

@@ -1,11 +1,7 @@
 import requests
 import csv
-import os
-from dotenv import load_dotenv
 
-load_dotenv()
-# EVENTBRITE_API_KEY = os.getenv("EVENTBRITE_API_KEY")
-EVENTBRITE_API_KEY = "XBBRKVLOWIFNJ2DQEMYA"
+EVENTBRITE_API_KEY = "YOUR_EVENTBRITE_API_KEY"  # Replace with your actual API key
 
 def get_organization_id():
     headers = {"Authorization": f"Bearer {EVENTBRITE_API_KEY}"}
@@ -13,7 +9,7 @@ def get_organization_id():
     response.raise_for_status()
     orgs = response.json().get("organizations", [])
     if orgs:
-        return orgs[0].get("id")  # just grab the first org
+        return orgs[0].get("id") 
     return None
 
 def get_organization_events(org_id):
@@ -46,7 +42,6 @@ def save_to_csv(data, filename):
         writer.writerows(data)
     print(f"Data saved to {filename}")
 
-# Main run
 try:
     org_id = get_organization_id()
     if org_id:
